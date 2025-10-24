@@ -15,7 +15,6 @@ The algorithms were tested on three datasets of varying sizes and densities. The
 | Large Metropolitan Area   | 25       | 50    | Kruskal's Algorithm | 460        | 0                   | 402             |
 | Large Metropolitan Area   | 25       | 50    | Prim's Algorithm    | 460        | 0                   | 153             |
 
-Execution time and operation count data are taken directly from the generated `results/summary.csv` file.*
 
 ## 2. Comparison of Prim's and Kruskal's Algorithms
 
@@ -50,5 +49,3 @@ This project includes a custom graph data structure implemented in `Graph.java` 
 *   The graph is represented using an **adjacency list** (`Map<String, List<Edge>>`), which is an efficient choice for storing sparse to moderately dense graphs and works well with both Prim's and Kruskal's algorithms.
 *   The `Edge` class implements the `Comparable` interface, which was essential for sorting edges in Kruskal's algorithm and for ordering them in the `PriorityQueue` for Prim's algorithm.
 *   This design promotes a **clean architecture** by separating the data representation (the `Graph` class) from the algorithmic logic, making the code more modular, readable, and easier to test.
-
-*(You could add screenshots of your code or diagrams here if you wish)*

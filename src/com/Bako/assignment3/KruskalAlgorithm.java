@@ -10,8 +10,8 @@ public class KruskalAlgorithm {
         long operationCount = 0;
 
         List<Edge> allEdges = new ArrayList<>(graph.getAllEdges());
-        Collections.sort(allEdges); // Uses compareTo in Edge class
-        operationCount += allEdges.size() * Math.log(allEdges.size()); // Approx. for sort
+        Collections.sort(allEdges);
+        operationCount += allEdges.size() * Math.log(allEdges.size());
 
         DisjointSetUnion dsu = new DisjointSetUnion(graph.getVertices());
 
@@ -19,7 +19,7 @@ public class KruskalAlgorithm {
         int totalCost = 0;
 
         for (Edge edge : allEdges) {
-            operationCount++; // Comparison in the loop
+            operationCount++;
             String root1 = dsu.find(edge.getSource());
             String root2 = dsu.find(edge.getDestination());
 

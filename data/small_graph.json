@@ -1,0 +1,16 @@
+{
+  "graph_name": "Small City Example",
+  "vertices": [
+    "District A",
+    "District B",
+    "District C",
+    "District D"
+  ],
+  "edges": [
+    {"source": "District A", "destination": "District B", "weight": 10},
+    {"source": "District A", "destination": "District C", "weight": 6},
+    {"source": "District A", "destination": "District D", "weight": 5},
+    {"source": "District B", "destination": "District D", "weight": 15},
+    {"source": "District C", "destination": "District D", "weight": 4}
+  ]
+}
